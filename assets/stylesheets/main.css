@@ -1,0 +1,45 @@
+.layui-body, .layui-footer {
+	left: 0 !important;
+}
+.layui-nav-img {
+	margin-right: 0;
+}
+.right {
+	position: absolute;
+	right: 32px;
+}
+
+a {
+	transition: border 0.8s;
+}
+a.-icon-link::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	background-image: url(https://mcisee.top/assets/icon/linkIcon.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1em;
+	height: 1em;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+div.layui-card-body>dl>dd>a {
+	color: var(--lay-color-blue-7);
+}
+div.layui-card-body>dl>dd>a:hover {
+	border-bottom: 4px solid;
+}
+a:hover::after {
+	color: #333;
+}
+div.box {
+	padding: 15px;
+}
+@media screen and (max-width: 767.98px) {
+	.layui-footer {
+		bottom: 0 !important;
+		height: auto !important;
+		line-height: 32px !important;
+	}
+}
